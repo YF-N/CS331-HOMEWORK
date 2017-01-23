@@ -1,0 +1,12 @@
+1. #Q:How many days in Jan? #O:A.29  B.30  C.31  #A:31
+2. #Q:How many days in Feb? #O:A.28  B.30  C.31  #A:28
+3. #Q:How many days in March? #O:A.29  B.30  C.31  #A:31
+4. #Q:How many days in Apr? #O:A.29  B.30  C.31  #A:30
+5. #Q:How many days in May? #O:A.29  B.30  C.31  #A:31
+6. #Q:How many days in June? #O:A.29  B.30  C.31  #A:30
+7. #Q:How many days in July? #O:A.29  B.30  C.31  #A:31
+8. #Q:How many days in Aug? #O:A.29  B.30  C.31  #A:31
+9. #Q:How many days in Sep? #O:A.29  B.30  C.31  #A:30
+10. #Q:How many days in Oct? #O:A.29  B.30  C.31  #A:31
+11. #Q:How many days in Nov? #O:A.29  B.30  C.31  #A:30
+12. #Q:How many days in Dec? #O:A.29  B.30  C.31  #A:31
