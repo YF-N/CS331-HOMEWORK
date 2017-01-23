@@ -17,6 +17,9 @@ class tester():
     def info(self):
         return 'Tester name is: {} {}  Tester ID is: {}'.format(self.fName,self.lName,self.ID)
 
+    def hello(self):
+        print('>>> Hello {} {} (ID={}), your test is start! \n'.format(self.fName,self.lName,self.ID))
+
     def addLog(self,res=True,index=0):
         if res==True:
             self.testLog.append('{}:√'.format(index))
@@ -37,7 +40,8 @@ class tester():
 
     def recordLog(self):
         testHistory=open('testHistory.txt','a')
-        testHistory.write('{0:10}|{1:15}|{2:15}|{3:50}|{4:5}\n'.format(self.ID,self.fName,self.lName,self.testLog,self._score))
+        log=str(self.testLog)
+        testHistory.write('{0:10}|{1:15}|{2:15}|{3:70}|{4:5}\n'.format(self.ID,self.fName,self.lName,log,self._score))
         testHistory.close()
         return True
 

@@ -1,0 +1,2 @@
+ID        |First Name     |Last Name      |Test Log (√=correct, ¢=incorrect)                                      |Score
+1234      |Yunfan         |Niu            |['5:¢', '3:√', '1:¢', '9:¢', '6:¢', '2:√', '8:¢', '10:¢', '7:¢', '0:√']|    3

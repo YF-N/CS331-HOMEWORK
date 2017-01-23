@@ -8,7 +8,7 @@ class question(object):
         self.options = str[self.Oindex:self.Aindex - 3]
         self.answer = str[self.Aindex:]
 
-        self.index=str[:str.find(end='.')]
+
 
     def getQuestion(self):
         return self.question
@@ -22,9 +22,18 @@ class question(object):
 
     def isCorrect(self,ans='No Answer'):
         if (self.answer.find(ans)>=0):
-            print('Your answer is correct!')
+            print('\n>>> Your answer is CORRECT!\n')
             return True
         else:
-            print('Your answer is not correct!   The answer is: {}'.format(self.answer))
+            print('\n>>> Your answer is INCORRECT!   The CORRECT ANSWER is: {}\n'.format(self.answer))
+            return False
+
+    def ask(self):
+        print('->Question: {}'.format(self.question))
+        print('->Possible answers: {}\n'.format(self.options))
+        answer=input('Please enter your answer (The whole word) >>>  ')
+        if self.isCorrect(answer):
+            return True
+        else:
             return False
 
