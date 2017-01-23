@@ -20,3 +20,11 @@ class question(object):
         return self.answer
 
 
+    def isCorrect(self,ans='No Answer'):
+        if (self.answer.find(ans)>=0):
+            print('Your answer is correct!')
+            return True
+        else:
+            print('Your answer is not correct!   The answer is: {}'.format(self.answer))
+            return False
+
