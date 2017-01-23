@@ -1,3 +1,5 @@
+#tester class hold necessary info of a tester
+
 class tester():
     def __init__(self):
         print("Welcome to the test!\n")
@@ -48,4 +50,7 @@ class tester():
     def goodbye(self):
         print("Thank you, test is finished. Your score is:{}/10".format(self._score))
 
-
+# Author: Yunfan Niu
+# yniu3@hawk.iit.edu
+# Illinois Institute of Technology
+# Jan 20, 2017

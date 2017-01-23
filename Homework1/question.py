@@ -1,3 +1,5 @@
+#question class hold necessary info of one single question
+
 class question(object):
     def __init__(self,str=''):
         self.Qindex=str.find('#Q:')+3
@@ -37,3 +39,7 @@ class question(object):
         else:
             return False
 
+# Author: Yunfan Niu
+# yniu3@hawk.iit.edu
+# Illinois Institute of Technology
+# Jan 20, 2017
