@@ -39,12 +39,18 @@ def randomList(size=1):
         list.append(randnum)
     return list
 
+#creat a list to record all testing time in order to plot the result
 
+br_l=[]
+bw_l=[]
+ir_l=[]
+iw_l=[]
+size_l=[]
 # code below try to test the speed of both of sort function
 
 import timeit
 print('      size   ','      bubble_random    ','       bubble_worst    ',' insertion_random   ','    insertion_worst   ','unit=ms\n')
-for size in range(1000,20001,500):
+for size in range(1000,11001,100):
     #An ascending list is worst case for descending sort function
 
     bubble_random=timeit.Timer(
@@ -62,3 +68,20 @@ for size in range(1000,20001,500):
     iw_t=insertion_worst.timeit(number=1)
 
     print("{0:10}   {1:20.3f}   {2:20.3f}   {3:20.3f}   {4:20.3f}".format(size,br_t,bw_t,ir_t,iw_t))
+
+    size_l.append(size)
+    br_l.append(br_t)
+    bw_l.append(bw_t)
+    ir_l.append(ir_t)
+    iw_l.append(iw_t)
+
+# code belowing try to plot the result
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+plt.plot(size_l,br_l,'r-',size_l,bw_l,'r--',size_l,ir_l,'b-',size_l,iw_l,'b--')
+plt.xlabel('List size')
+plt.ylabel('Sorting Time /ms')
+plt.title('Bubble sorting (red) VS Insertion sorting(blue)\n worst case=dotted-line | random case=solid-line')
+plt.show()
