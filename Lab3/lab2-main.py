@@ -28,4 +28,37 @@ def descending_insertion(alist=[]):
                 break                                   #go to the next item of outer loop
     return alist
 
+
 #print(descending_insertion(testList))
+#function to generate a random list
+import random
+def randomList(size=1):
+    list=[]
+    for i in range(0,size):
+        randnum=random.randint(0,size)
+        list.append(randnum)
+    return list
+
+
+# code below try to test the speed of both of sort function
+
+import timeit
+print('      size   ','      bubble_random    ','       bubble_worst    ',' insertion_random   ','    insertion_worst   ','unit=ms\n')
+for size in range(1000,20001,500):
+    #An ascending list is worst case for descending sort function
+
+    bubble_random=timeit.Timer(
+        "descending_bubble(randomList(%d))" %size,"from __main__ import descending_bubble,randomList" )
+    bubble_worst=timeit.Timer(
+        "descending_bubble(list(range(%d)))" %size,"from __main__ import descending_bubble" )
+    insertion_random = timeit.Timer(
+        "descending_insertion(randomList(%d))" % size, "from __main__ import descending_insertion,randomList")
+    insertion_worst = timeit.Timer(
+        "descending_insertion(list(range(%d)))" % size, "from __main__ import descending_insertion")
+
+    br_t=bubble_random.timeit(number=1)
+    bw_t=bubble_worst.timeit(number=1)
+    ir_t=insertion_random.timeit(number=1)
+    iw_t=insertion_worst.timeit(number=1)
+
+    print("{0:10}   {1:20.3f}   {2:20.3f}   {3:20.3f}   {4:20.3f}".format(size,br_t,bw_t,ir_t,iw_t))
