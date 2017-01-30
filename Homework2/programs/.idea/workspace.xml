@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff53ce7-705e-40f2-8670-b93c46dabbea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiment2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiment3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/programs$experiment1.coverage" NAME="experiment1 Coverage Results" MODIFIED="1485808956161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/programs$experiment2.coverage" NAME="experiment2 Coverage Results" MODIFIED="1485810845840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/programs$experiment3.coverage" NAME="experiment3 Coverage Results" MODIFIED="1485812826311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -25,8 +26,8 @@
       <file leaf-file-name="experiment1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="26" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <element signature="e#69#82#0" expanded="true" />
               </folding>
@@ -34,11 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="experiment2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="10" />
+              <caret line="32" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+              <folding>
+                <element signature="e#75#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="experiment3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
               <folding>
                 <element signature="e#75#88#0" expanded="true" />
               </folding>
@@ -63,6 +76,7 @@
       <list>
         <option value="$PROJECT_DIR$/experiment1.py" />
         <option value="$PROJECT_DIR$/experiment2.py" />
+        <option value="$PROJECT_DIR$/experiment3.py" />
       </list>
     </option>
   </component>
@@ -119,7 +133,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.experiment2">
+  <component name="RunManager" selected="Python.experiment3">
     <configuration default="false" name="experiment1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,6 +166,24 @@
       <module name="programs" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="experiment3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="programs" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -370,14 +402,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.experiment1" />
       <item index="1" class="java.lang.String" itemvalue="Python.experiment2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.experiment3" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.experiment2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.experiment1" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.experiment3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.experiment2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.experiment1" />
       </list>
     </recent_temporary>
   </component>
@@ -432,16 +466,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experiment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="e#69#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/timeit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -453,7 +477,27 @@
     <entry file="file://$PROJECT_DIR$/experiment2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="10" />
+          <caret line="32" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="e#75#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="e#69#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding>
             <element signature="e#75#88#0" expanded="true" />
           </folding>
