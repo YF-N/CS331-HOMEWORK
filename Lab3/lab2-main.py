@@ -50,7 +50,7 @@ size_l=[]
 
 import timeit
 print('      size   ','      bubble_random    ','       bubble_worst    ',' insertion_random   ','    insertion_worst   ','unit=ms\n')
-for size in range(1000,11001,100):
+for size in range(1000,6001,50):
     #An ascending list is worst case for descending sort function
 
     bubble_random=timeit.Timer(
